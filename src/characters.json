@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "blossom",
+        "image": "http://images6.fanpop.com/image/photos/34600000/blossom-powerpuff-girls-34674063-640-480.png",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "bubbles",
+        "image": "https://78.media.tumblr.com/2f011b364fd0f2ad64ca233ea4a4b8a3/tumblr_mhaerezsBH1qd4leeo1_500.png",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "buttercup",
+        "image": "https://cdn-images-1.medium.com/max/1600/1*FZ9ZTXlsOvIlNIZUXGWdbQ.jpeg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "prof_utonium",
+        "image": "./public/img/prof_utonium.png",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "mayor",
+        "image": "./public/img/mayor.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "mojo_jojo",
+        "image": "./public/img/mojo_jojo.jpg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "fuzzy_lumpkins",
+        "image": "./public/img/fuzzy_lumpkins.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "miss_bellum",
+        "image": "./public/img/miss_bellum.jpg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "miss_keane",
+        "image": "./public/img/miss_keane.jpg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "princess",
+        "image": "./public/img/princess.png",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "him",
+        "image": "./public/img/him.png",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "sedusa",
+        "image": "./public/img/sedusa.jpg",
+        "clicked": false
+    }
+]
