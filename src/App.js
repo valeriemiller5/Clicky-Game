@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import CharacterCard from "./components/CharacterCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import characters from "./characters.json";
 import "./App.css";
 
@@ -13,16 +14,19 @@ class App extends Component {
   
   render() {
     return (
-      <Wrapper>
-        <Title>Clicky Game!</Title>
-        {this.state.characters.map(character => (
-          <CharacterCard 
-            id={character.id}
-            key={character.id}
-            image={character.image}
-          />
-        ))}
-      </Wrapper>
+      <div className="format">
+        <Navbar />
+        <Wrapper>
+          {this.state.characters.map(character => (
+            <CharacterCard 
+              id={character.id}
+              key={character.id}
+              image={character.image}
+            />
+          ))}
+        </Wrapper>
+        <Footer />
+      </div>
     );
   }
 }

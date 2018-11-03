@@ -4,7 +4,7 @@ import "./CharacterCard.css";
 const CharacterCard = props => (
   <div className="card">
     <div className="img-container">
-      <img alt={props.name} src={props.image} />
+      <img alt={props.name} src={require("../../images/" + props.image)} />
     </div>
     {/* <span onClick={} className="select"></span> */}
   </div>
