@@ -3,8 +3,18 @@
   padding: 1rem;
   background-color: black;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
   margin-top: 50px;
   margin-bottom: 0px;
+}
+
+.ionimage {
+  margin: 0;
+  padding: 0;
+}
+
+.ion {
+  width: 35px;
+  height: 35px;
 }
