@@ -10,7 +10,7 @@ const Navbar = props => (
         Click any image to begin the game!
       </li>
       <li className="nav-item right">
-        Current Score:
+        <p>Current Score: {props.currentScore}</p>
       </li>
       |
       <li className="nav-item">
