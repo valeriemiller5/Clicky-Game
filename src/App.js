@@ -67,16 +67,17 @@ class App extends Component {
         // ternary conditional operator to set high score
         highScore: ((this.state.currentScore >= this.state.highScore) ? this.state.currentScore : this.state.highScore)
       })
-      this.resetGame();
+      setTimeout(this.resetGame, 2000);
     } else if (this.state.currentScore === 12) {
       this.setState({
         message: "There's always money in the banana stand *wink*",
         highScore: ((this.state.currentScore >= this.state.highScore) ? this.state.currentScore : this.state.highScore)
       })
-      this.resetGame();
+      setTimeout(this.resetGame, 2000);
     }
   }
 
+  // Set the state of all values, except highScore to default values
   resetGame = () => {
    this.setState({
     characters,
@@ -93,7 +94,6 @@ class App extends Component {
           message={this.state.message}
           currentScore={this.state.currentScore} 
           highScore={this.state.highScore}
-          // handleClick={this.handleClick}
         />
         <Wrapper>
           {this.state.characters.map(character => (
