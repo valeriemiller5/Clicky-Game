@@ -66,12 +66,14 @@ class App extends Component {
         currentScore: 0,
         // ternary conditional operator to set high score
         highScore: ((this.state.currentScore >= this.state.highScore) ? this.state.currentScore : 0)
-      });
+      })
+      this.resetGame();
     } else if (this.state.currentScore === 12) {
       this.setState({
         message: "There's always money in the banana stand *wink*",
         highScore: ((this.state.currentScore >= this.state.highScore) ? this.state.currentScore : 0)
       })
+      this.resetGame();
     }
   }
 
@@ -80,7 +82,7 @@ class App extends Component {
     characters,
     clicked: characters,
     currentScore: 0,
-    highScore: ((this.state.currentScore >= this.state.highScore) ? this.state.currentScore : 0),
+    // highScore: ((this.state.currentScore >= this.state.highScore) ? this.state.currentScore : 0),
     message: ""
    }) 
   }
