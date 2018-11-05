@@ -58,6 +58,7 @@ class App extends Component {
       message: "STEVE HOLT!",
       clicked: updateCharacter
     })
+    document.getElementById("message").style.color = "green";
     // sets a variable called findCharacter that looks through the images array, if a clicked id is gone (undefined), then game over...
     let findCharacter = this.state.clicked.find(character => character.id === id)
     if(findCharacter === undefined) {
@@ -67,6 +68,7 @@ class App extends Component {
         // ternary conditional operator to set high score
         highScore: ((this.state.currentScore >= this.state.highScore) ? this.state.currentScore : this.state.highScore)
       })
+      document.getElementById("message").style.color = "red";
       setTimeout(this.resetGame, 2000);
     } else if (this.state.currentScore === 12) {
       this.setState({
@@ -84,7 +86,8 @@ class App extends Component {
     clicked: characters,
     currentScore: 0,
     message: ""
-   }) 
+   })
+   document.getElementById("message").style.color = "white"; 
   }
   
   render() {

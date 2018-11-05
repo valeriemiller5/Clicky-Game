@@ -7,7 +7,7 @@ const Navbar = props => (
         Clicky Game
       </li>
       <li className="nav-item center">
-        <p>{props.message || "Click any image to begin the game!"}</p>
+        <p id="message">{props.message || "Click any image to begin the game!"}</p>
       </li>
       <li className="nav-item right">
         <p>Current Score: {props.currentScore}</p>
