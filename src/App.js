@@ -52,13 +52,14 @@ class App extends Component {
   handleClick = id => {
     // sets a variable called updateCharacter that removes an image's id when clicked, then adds 1 point to the current score and sets "clicked" to updateCharacter
     let updateCharacter = this.state.clicked.filter(character => character.id !== id);
+    let newScore = this.state.currentScore + 1
     this.setState({ 
       characters: this.shuffleCharacter(characters),
-      currentScore: this.state.currentScore + 1,
+      currentScore: newScore,
       message: "STEVE HOLT!",
       clicked: updateCharacter
     })
-    document.getElementById("message").style.color = "green";
+    document.getElementById("message").style.color = "green"; // find a way to change color without changing the DOM
     // sets a variable called findCharacter that looks through the images array, if a clicked id is gone (undefined), then game over...
     let findCharacter = this.state.clicked.find(character => character.id === id)
     if(findCharacter === undefined) {
@@ -66,16 +67,17 @@ class App extends Component {
         message: "I've made a huge mistake...",
         currentScore: 0,
         // ternary conditional operator to set high score
-        highScore: ((this.state.currentScore >= this.state.highScore) ? this.state.currentScore : this.state.highScore)
+        highScore: ((newScore >= this.state.highScore) ? (newScore - 1) : this.state.highScore)
       })
       document.getElementById("message").style.color = "red";
       setTimeout(this.resetGame, 2000);
-    } else if (this.state.currentScore === 12) {
+    } else if (newScore === 12) {
       this.setState({
         message: "There's always money in the banana stand *wink*",
-        highScore: ((this.state.currentScore >= this.state.highScore) ? this.state.currentScore : this.state.highScore)
+        highScore: newScore
       })
-      setTimeout(this.resetGame, 2000);
+      document.getElementById("message").style.color = "yellow";
+      setTimeout(this.resetGame, 4000);
     }
   }
 
