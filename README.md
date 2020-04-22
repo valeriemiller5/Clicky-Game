@@ -1,5 +1,7 @@
 # clicky-game
 
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://githubbox.com/valeriemiller5/Clicky-Game)
+
 This is an on-line app that allows users play a game by clicking on the images on the screen.
 
 Once an image is clicked, it cannot be clicked again or the game will end.  To add to the challenge, the images shuffle each time one is clicked.
